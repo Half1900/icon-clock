@@ -1,0 +1,66 @@
+body {
+    background: #ebeff9;
+    border: none;
+    text-align: left;
+}
+
+#title, #subtitle {
+    text-align: center;
+}
+
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.faceOptionContainer, 
+.themeOptionContainer,
+.fontOptionContainer {
+    margin-bottom: 5px;
+}
+
+.faceOptionContainer {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+.faceOptionContainer img {
+    width: 16px; 
+    height: 16px;
+}
+
+img#digitalIcon {
+    margin: 0 3px 0 3px;
+}
+
+fieldset {
+    font-weight: 500;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #6c6c6c;
+    border-radius: 3px;
+    display: grid;
+    user-select: none;
+}
+
+fieldset.disabled {
+    opacity: 0.5; 
+    pointer-events: none; 
+}
+
+legend {
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    vertical-align: middle;
+    margin: 0 5px 0 5px;
+}
+
+select {
+    margin: 3px 5px 0 5px;
+}

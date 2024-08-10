@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>图标时钟选项</title>
+        <link rel="preload" href="popup.css" as="style" crossorigin="anonymous"/>
+        <link rel="preload" href="popup.js" as="script" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="popup.css" crossorigin="anonymous"/>
+        <script defer src="popup.js" type="module" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="optionsContainer">
+
+            <fieldset id="faceContainer" style="display:none;">
+                <legend>钟面</legend>
+                <span class="faceOptionContainer">
+                    <img 
+                        id="digitalIcon"
+                        alt="Digital clock icon"
+                        width="16"
+                        height="16"
+                        src="/images/iconclock-popup-icon-digital-nasalization-light-16.png"
+                    />
+                    <input id="radioFaceDigital" type="radio" name="faceType" value="digital">
+                    <label for="radioFaceDigital" class="label face digital">数字</label>
+                </span>
+            </fieldset>
+
+            <fieldset id="fontContainer">
+                <legend>字体</legend>
+                <span class="fontOptionContainer">
+                    <input type="radio" name="whichFont" value="font0" id="radioFont0">
+                    <label for="radioFont0" class="label font">Font 0</label>
+                </span>
+                <span class="fontOptionContainer">
+                    <input type="radio" name="whichFont" value="font1" id="radioFont1">
+                    <label for="radioFont1" class="label font">Font 1</label>
+                </span>
+                <span class="fontOptionContainer">
+                    <input type="radio" name="whichFont" value="font2" id="radioFont2">
+                    <label for="radioFont2" class="label font">Font 2</label>
+                </span>
+            </fieldset>
+
+            <fieldset id="themeContainer">
+                <legend>主题</legend>
+                <span id="optionUseBackground" class="themeOptionContainer">
+                    <input id="checkboxUseBackground" class="checkbox" type="checkbox" name="useBackground">
+                    <label for="checkboxUseBackground">不透明背景</label>
+                </span>
+                <span id="optionForceDarkMode" class="themeOptionContainer">
+                    <input id="checkboxForceDarkMode" class="checkbox" type="checkbox" name="forceDarkMode">
+                    <label for="checkboxForceDarkMode">背景色切换</label>
+                </span>
+                <span id="optionFollowSystemDark" class="themeOptionContainer">
+                    <input id="checkboxFollowSystemDark" class="checkbox" type="checkbox" name="followSystemDark" checked>
+                    <label for="checkboxFollowSystemDark">跟随系统色</label>
+                </span>
+            </fieldset>
+
+        </div>
+
+    </body>
+</html>

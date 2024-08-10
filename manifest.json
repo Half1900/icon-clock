@@ -1,0 +1,43 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "图标时钟：点击定制"
+   },
+   "background": {
+      "service_worker": "serviceworker.js",
+      "type": "module"
+   },
+  "permissions": ["browserActions"],  
+   "commands": {
+      "toggleDarkKey": {
+         "description": "启用/禁用深色模式",
+         "suggested_key": {
+            "default": "Ctrl+Shift+D",
+            "mac": "Command+Shift+D"
+         }
+      },
+      "toggleDebugKey": {
+         "description": "启用/禁用控制台日志记录",
+         "suggested_key": {
+            "default": "Ctrl+Shift+B",
+            "mac": "Command+Shift+B"
+         }
+      }
+   },
+   "icons": {
+      "128": "/images/icon.png",
+      "16": "/images/icon.png",
+      "24": "/images/icon.png",
+      "32": "/images/icon.png",
+      "48": "/images/icon.png",
+      "64": "/images/icon.png",
+      "96": "/images/icon.png"
+   },
+   "manifest_version": 3,
+   "minimum_chrome_version": "100",
+   "name": "图标时钟：一个工具栏时间！",
+   "description":"在应用图标上显示时分秒数字时间",
+   "permissions": [ "alarms", "offscreen", "storage" ],
+   "short_name": "图标时钟",
+   "version": "9.8.24.2104"
+}
